@@ -22,14 +22,19 @@ export const navigationLinks = [
     url: "#skills",
   },
   {
+    id: "projects",
+    title: "Projects",
+    url: "#projects",
+  },
+  {
     id: "experience",
     title: "Experience",
     url: "#experience",
   },
   {
-    id: "projects",
-    title: "Projects",
-    url: "#projects",
+    id: "academics",
+    title: "Academics",
+    url: "#academics",
   },
 ];
 
@@ -132,3 +137,24 @@ export const experience = [
     responsibilities: [],
   }
 ];
+
+export const education = [
+  {
+    id: 1,
+    date: "Expected to graduate in June 2026",
+    degree: "Master of Science",
+    major: "Software Engineering",
+    college: "University of Houston",
+    location: "ClearLake, TX",
+    achievements: "GPA: 3.75",
+  },
+  {
+    id: 2,
+    date: "Graduated in January 2021",
+    degree: "Bachelor of Science",
+    major: "Computer Engineering",
+    college: "Rutgers University",
+    location: "New Brunswick, NJ",
+    achievements: "GPA: 3.38, Dean's List in Spring 2019",
+  }
+]

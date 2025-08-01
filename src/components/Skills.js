@@ -8,7 +8,9 @@ const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <SectionTitle title="I work with" />
+            <SectionTitle title="My Skills">
+              <p>Here are the tools and technologies I work with on a regular basis. I am always learning, evolving, and staying updated with the latest in frontend development.</p>
+            </SectionTitle>
           </div>
         </div>
         <div className="row justify-content-center">

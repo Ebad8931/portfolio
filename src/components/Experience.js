@@ -13,7 +13,9 @@ const Experience = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <SectionTitle title="My Work Experience" />
+            <SectionTitle title="My Work Experience">
+              <p>Over the years, I have had the chance to work with some incredible teams and companies—building products, solving problems, and growing as a developer along the way. Here is a look at my professional journey.</p>
+            </SectionTitle>
           </div>
         </div>
         <div className="row">
@@ -41,13 +43,6 @@ const Experience = () => {
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <p style={{ marginTop: 40 }}>
-              To learn more about my work experience, <a target="_blank" rel="noreferrer" href={links.resume} className="link">download my resume</a> or visit my <a target="_blank" rel="noreferrer" href={links.linkedin} className="link">LinkedIn Profile</a>
-            </p>
           </div>
         </div>
       </div>

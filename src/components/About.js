@@ -25,7 +25,9 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <SectionTitle title="About Me" />
+            <SectionTitle title="About Me">
+              <p>I am a software engineer at Fidelity Investments. I build full-stack solutions with a focus on performance, security, and maintainability, primarily using Angular and AWS. Watch the video to get to know me better!</p>
+            </SectionTitle>
           </div>
         </div>
         <div className="row">
