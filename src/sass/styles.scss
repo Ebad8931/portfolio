@@ -1,0 +1,28 @@
+@import "abstracts/variables";
+@import "abstracts/helpers";
+@import "abstracts/animations";
+
+@import "core/base";
+@import "core/grid";
+@import "core/type";
+
+// common
+@import "components/socials";
+@import "components/button";
+@import "components/section";
+@import "components/section-title";
+@import "components/card";
+@import "components/link";
+@import "components/chip";
+
+// header
+@import "components/header";
+@import "components/navigation";
+
+// sections
+@import "components/hero";
+@import "components/about";
+@import "components/skills";
+@import "components/experience";
+@import "components/portfolio";
+@import "components/footer";

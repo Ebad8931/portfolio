@@ -1,0 +1,20 @@
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $black;
+
+  @media (max-width: $grid-breakpoints-lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

@@ -1,0 +1,92 @@
+#experience {
+  .vertical-timeline {
+    width: 100%;
+    max-width: unset;
+    
+    .vertical-timeline-element {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    .vertical-timeline-element-content {
+      padding: 0;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      background-color: $black;
+
+      .card {
+        margin-bottom: 0;
+
+        h5 {
+          color: $primary;
+          font-weight: 600;
+
+          .company {
+            color: $white;
+          }
+        }
+
+        .location {
+          margin-top: 0;
+        }
+
+        li {
+          margin-left: 24px;
+          list-style-type: disc;
+        }
+      }
+    }
+
+    .vertical-timeline-element-icon {
+      position: absolute;
+      top: 24px;
+      left: 4px;
+      width: 32px;
+      height: 32px;
+      border-radius: $br-lg;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: $white;
+      border: 4px solid $primary;
+    }
+
+    .vertical-timeline-element-date {
+      position: absolute;
+      right: calc(100% + 60px);
+
+      min-width: max-content;
+      color: $white;
+    }
+  }
+
+  @media (min-width: $grid-breakpoints-xl) {
+    .vertical-timeline-element-date {
+      margin-right: $sp-6;
+      font-size: 20px;
+      top: 16px;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-xl) {
+    .vertical-timeline-element-date {
+      margin-right: $sp-2;
+      font-size: 16px;
+      top: 20px;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    .vertical-timeline {
+      .vertical-timeline-element-icon {
+        top: 16px;
+        left: 8px;
+        width: 24px;
+        height: 24px;
+      }
+
+      .vertical-timeline-element-content {
+        margin-left: $sp-5;
+      }
+    }
+  }
+}

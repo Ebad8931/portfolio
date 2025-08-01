@@ -1,0 +1,43 @@
+#about {
+  .video-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 15;
+    width: calc(100% - 30px);
+    height: 100%;
+    background-color: $primary-lightest;
+    background-image: linear-gradient(45deg, $primary-light, rgb(42, 36, 24,0.2));
+    z-index: 2;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 3;
+
+    img {
+      transition: all .1s ease-in-out;
+      filter: drop-shadow(10px 15px 20px #2a2418);
+    }
+
+    &:hover {
+      img {
+        filter: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+footer {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  transform: rotate(180deg);
+
+  .container {
+    text-align: center;
+    transform: rotate(-180deg);
+
+    p {
+      margin-top: $sp-1;
+      margin-bottom: $sp-1;
+    }
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+  @media (max-width: $grid-breakpoints-lg) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,84 @@
+.button {
+  display: block;
+  max-width: fit-content;
+  border-radius: $br-md;
+
+  &.cta {
+    color: $primary;
+    border: 2px solid $primary;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $black;
+      background-color: $primary;
+    }
+
+    &.lg {
+      font-size: 18px;
+      font-weight: 700;
+      padding: $sp-1-half $sp-5;
+    }
+
+    &.sm {
+      font-size: 14px;
+      font-weight: 400;
+      padding: $sp-1 $sp-3;
+    }
+  }
+
+  &.text {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 $sp-3;
+    color: $primary;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      text-decoration: underline;
+    }
+
+    svg {
+      transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+
+      path {
+        transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(0.15rem) translateY(-0.15rem);
+      }
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-xl) {
+    &.cta {
+      padding: 12px $sp-7;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-lg) {
+    font-weight: 600;
+
+    &.cta {
+      padding: 10px $sp-5;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    &.cta.lg {
+      min-width: 80%;
+      align-self: center;
+      padding: 12px 0;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    &.cta {
+      padding: $sp-1 0;
+      font-size: 14px;
+    }
+  }
+}

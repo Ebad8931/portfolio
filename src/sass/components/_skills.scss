@@ -1,0 +1,18 @@
+#skills {
+  .skill {
+    text-align: center;
+    padding-bottom: $sp-8;
+
+    .title {
+      padding-top: $sp-1;
+      color: $secondary;
+      font-weight: 600;
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-xl) {
+    .skill {
+      padding-bottom: $sp-6;
+    }
+  }
+}

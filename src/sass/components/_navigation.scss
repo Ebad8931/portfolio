@@ -1,0 +1,54 @@
+.navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    
+    &:not(.active) {
+      color: $white;
+    }
+
+    &.active {
+      color: $primary;
+      font-weight: 600;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: $sp-5;
+    }
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      transition: color .3s ease-in-out;
+    }
+  }
+
+  @media (min-width: $grid-breakpoints-sm) and (max-width: $grid-breakpoints-lg) {
+    a {
+      font-size: 16px;
+
+      &:not(:last-of-type) {
+        margin-right: $sp-3;
+      }
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      padding-top: $sp-2;
+      padding-bottom: $sp-2;
+      font-size: 16px;
+
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
+  }
+}

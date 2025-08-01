@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+html,
+body,
+#root {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: $white;
+  background-image: url('../../assets/hero.svg');
+  background-attachment: fixed;
+  // background-color: $black;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media (min-width: $grid-breakpoints-xs) {
+    scroll-margin: -100px;
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    scroll-padding: 50px;
+  }
+}
+
+#root {
+  min-height: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-size: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

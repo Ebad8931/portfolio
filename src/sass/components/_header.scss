@@ -1,0 +1,106 @@
+header {
+  &:not(.fixed) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $black;
+    z-index: 2;
+    animation-duration: 0.5s;
+    animation-name: slideInDown;
+    box-shadow: $base-box-shadow;
+    border-bottom-left-radius: $br-sm;
+    border-bottom-right-radius: $br-sm;
+  }
+
+  @media (max-width: $grid-breakpoints-sm) {
+    .header-row {
+      align-items: center;
+
+      .navigation-wrapper {
+        display: none;
+      }
+    }
+
+    &.show-nav {
+      .header-row {
+        position: relative;
+
+        .navigation-wrapper {
+          display: block;
+          position: absolute;
+          width: 100%;
+          right: 0;
+          top: 100%;
+          background: $black;
+          border-radius: $br-sm;
+          border: 1px solid $primary-light;
+          box-shadow: $base-box-shadow;
+        }
+      }
+    }
+
+    .hamburger {
+      float: right;
+
+      &::before,
+      &::after {
+        content: "";
+        position: relative;
+        right: 0;
+        display: block;
+        width: 20px;
+        transition: all 0.3s ease;
+      }
+
+      &::before {
+        top: -2px;
+        height: 2px;
+        background-color: $primary;
+      }
+
+      &::after {
+        top: 2px;
+        height: 8px;
+        border-top: 2px solid $primary;
+        border-bottom: 2px solid $primary;
+      }
+
+      &.open {
+        &::before {
+          top: 0;
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          top: -2px;
+          border-bottom: 0;
+          height: 2px;
+          width: 20px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    .hamburger {
+      &::before,
+      &::after {
+        width: 16px;
+      }
+
+      &.open {
+        &::after {
+          top: -2px;
+          width: 16px;
+        }
+      }
+    }
+  }
+}

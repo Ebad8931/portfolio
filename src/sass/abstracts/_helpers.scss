@@ -1,0 +1,23 @@
+.d-xl-down-none {
+  @media (max-width: $grid-breakpoints-xl) {
+    display: none !important;
+  }
+}
+
+.d-lg-down-none {
+  @media (max-width: $grid-breakpoints-lg) {
+    display: none !important;
+  }
+}
+
+.d-md-down-none {
+  @media (max-width: $grid-breakpoints-md) {
+    display: none !important;
+  }
+}
+
+.d-sm-down-none {
+  @media (max-width: $grid-breakpoints-sm) {
+    display: none !important;
+  }
+}

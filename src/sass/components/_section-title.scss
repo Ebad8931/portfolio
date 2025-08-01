@@ -1,0 +1,19 @@
+.section-title {
+  margin-bottom: 60px;
+
+  h2 {
+    text-align: center;
+  }
+
+  @media (max-width: $grid-breakpoints-xl) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $grid-breakpoints-lg) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $grid-breakpoints-xs) {
+    margin-bottom: 30px;
+  }
+}

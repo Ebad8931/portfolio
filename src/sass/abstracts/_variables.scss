@@ -1,0 +1,48 @@
+$gutters: 30px;
+$grid-breakpoints-xl: 1200px;
+$grid-breakpoints-lg: 992px;
+$grid-breakpoints-md: 768px;
+$grid-breakpoints-sm: 576px;
+$grid-breakpoints-xs: 320px;
+
+// colors
+$primary: #ffbd24;
+$secondary: #20a5a0;
+$primary-light: rgb(255, 189, 35, 0.7);
+$primary-lightest: rgb(255, 189, 35, 0.2);
+$secondary-lightest: rgba(207, 255, 253, 0.5);
+$black: #13110b;
+$white: #fbffff;
+
+// spacing
+$sp-1: 8px;
+$sp-1-half: 12px;
+$sp-2: 16px;
+$sp-3: 24px;
+$sp-4: 32px;
+$sp-5: 40px;
+$sp-6: 48px;
+$sp-7: 56px;
+$sp-8: 64px;
+
+//fonts
+$base-font: "Nunito", sans-serif;
+$heading-font: "Montserrat", sans-serif;
+
+//border-radius
+$br-sm: 10px;
+$br-md: 100px;
+$br-lg: 50%;
+
+// other
+$base-box-shadow: 10px 15px 20px -10px #2a2418;
+$base-linear-gradient: linear-gradient(
+  135deg,
+  $primary-lightest 23.53%,
+  $secondary-lightest 100%
+);
+$alternate-linear-gradient: linear-gradient(
+  135deg,
+  $secondary-lightest 23.53%,
+  $primary-lightest 66%
+);
